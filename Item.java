@@ -1,7 +1,6 @@
 import java.text.*;
 
 public class Item {
-    // You will need to add more instance variables
     private double price;
     private double bulkPrice;
     private int bulkQuantity;
@@ -40,8 +39,6 @@ public class Item {
     }
 
     public String toString() {
-        // This does NOT produce the correct behavior. It's only here to keep the
-        // compiler happy until you replace it with working code
         NumberFormat format = (NumberFormat) NumberFormat.getCurrencyInstance();
         format.setMinimumFractionDigits(2);
         format.setMaximumFractionDigits(2);
